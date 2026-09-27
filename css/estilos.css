@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+header {
+    padding: 20px;
+    color: white;
+    background-color: #1261a0;
+    text-align: center;
+}
+
+nav {
+    padding: 10px;
+    background-color: #f28c28;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 4px 10px;
+    color: black;
+    font-weight: bold;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+h1, h2, h3 {
+    color: #083b66;
+}
+
+header h1 {
+    color: white;
+}
+
+.foto-personal {
+    width: 220px;
+    height: auto;
+    border: 4px solid #f28c28;
+}
+
+.foto-grande {
+    display: block;
+    width: 90%;
+    max-width: 700px;
+    height: auto;
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    color: white;
+    background-color: #1261a0;
+}
+
+.evidencia {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #1261a0;
+}
+
+.evidencia a {
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    color: white;
+    background-color: #083b66;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos del ejemplo de elementos en capas */
+.cuadros {
+    position: relative;
+    width: 370px;
+    height: 160px;
+    max-width: 100%;
+    background: #eaeaed;
+    border-radius: 6px;
+}
+
+.cuadro {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    color: white;
+    background: #2db34a;
+    border: 2px solid #ff7b29;
+    border-radius: 6px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.cuadro-1 { top: 10px; left: 10px; }
+.cuadro-2 { bottom: 10px; left: 70px; z-index: 3; opacity: 0.8; }
+.cuadro-3 { top: 10px; left: 130px; z-index: 2; }
+.cuadro-4 { bottom: 10px; left: 190px; z-index: 1; }
+
+/* Estilos del ejemplo de texto sobre imagen */
+.contenedor-imagen {
+    position: relative;
+    max-width: 735px;
+}
+
+.contenedor-imagen img {
+    display: block;
+    width: 100%;
+    opacity: 0.4;
+}
+
+.topleft, .topright, .bottomleft, .bottomright, .center {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.topleft { top: 8px; left: 16px; }
+.topright { top: 8px; right: 16px; }
+.bottomleft { bottom: 8px; left: 16px; }
+.bottomright { right: 16px; bottom: 8px; }
+.center { top: 50%; left: 0; width: 100%; text-align: center; }
+
+/* Estilos del ejemplo transform */
+.area-traslado {
+    min-height: 260px;
+    border: 2px dashed #1261a0;
+}
+
+.div-trasladado {
+    width: 300px;
+    max-width: 70%;
+    min-height: 100px;
+    padding: 10px;
+    background-color: cyan;
+    border: 3px solid black;
+    transform: translate(50px, 100px);
+}
+
+@media (max-width: 500px) {
+    nav a { display: block; }
+    .cuadros { transform: scale(0.8); transform-origin: left top; }
+}
